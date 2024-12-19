@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Proyecto de Prueba: Lista de Tareas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de prueba desarrollado para aprender a usar React y TypeScript. El proyecto consiste en una simple aplicación de lista de tareas (To-Do List) que permite agregar y borrar tareas.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **TypeScript**: Un superconjunto de JavaScript que añade tipos estáticos opcionales.
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Agregar Tarea**: Permite al usuario agregar una nueva tarea a la lista.
+- **Borrar Tarea**: Permite al usuario borrar una tarea existente de la lista.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Cómo Ejecutar el Proyecto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clona el repositorio.
+2. Instala las dependencias con `npm install`.
+3. Ejecuta el proyecto en modo desarrollo con `npm run dev`.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Capturas de Pantalla
+![image](https://github.com/user-attachments/assets/b6d17e05-e3ae-4edd-9a3f-2ffae39edad6)
+
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT.
